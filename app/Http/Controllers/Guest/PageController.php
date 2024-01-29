@@ -18,4 +18,9 @@ class PageController extends Controller
 
         return view('welcome', compact('movies'));
     }
+
+    public function show($id)
+    {
+        return "Dettaglio pagina di id: {$id}";
+    }
 }
